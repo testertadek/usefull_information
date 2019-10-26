@@ -1,0 +1,5 @@
+cut -f1 -d','  */produkty.txt | xargs -I {} echo "https://google.com/search?q={}"
+
+cut -f1 -d','  */produkty.txt | sort | uniq
+
+grep mlekov * -R
