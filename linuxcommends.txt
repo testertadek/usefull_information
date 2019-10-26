@@ -44,3 +44,32 @@ Oct 26 09
 Oct 26 10
 Oct 26 12
 
+
+https://www.sourcetreeapp.com/
+gitk
+gitg
+https://www.gitkraken.com/
+
+tester@tester-m:/usr/bin$ sudo egrep 'tester' /var/log/syslog | egrep -o 'resource:[^:]*' | sort | uniq -c | sort -n -r
+
+     81 resource:///org/gnome/gjs/modules/_legacy.js
+      6 resource:///org/gnome/gjs/modules/overrides/Gio.js
+      4 resource:///org/gnome/gjs/modules/overrides/GObject.js
+     22 resource:///org/gnome/gjs/modules/signals.js
+     16 resource:///org/gnome/gjs/modules/tweener/tweener.js
+      3 resource:///org/gnome/shell/gdm/util.js
+     28 resource:///org/gnome/shell/ui/extensionSystem.js
+      4 resource:///org/gnome/shell/ui/lightbox.js
+     14 resource:///org/gnome/shell/ui/screenShield.js
+     14 resource:///org/gnome/shell/ui/sessionMode.js
+      3 resource:///org/gnome/shell/ui/shellDBus.js
+      9 resource:///org/gnome/shell/ui/tweener.js
+
+
+
+
+
+
+
+
+
