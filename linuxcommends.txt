@@ -3,3 +3,44 @@ cut -f1 -d','  */produkty.txt | xargs -I {} echo "https://google.com/search?q={}
 cut -f1 -d','  */produkty.txt | sort | uniq
 
 grep mlekov * -R
+
+
+
+
+
+wyszukiwanie informacji w logach 
+
+sudo grep -i ERROR   /var/log/syslog | cut -f1,2,3 -d" "
+
+
+[200~tester@tester-m:~$ sudo grep -i ERROR   /var/log/syslog | cut -f1,2,3 -d" "
+Oct 26 09:00:19
+Oct 26 09:29:47
+Oct 26 10:46:45
+Oct 26 10:46:45
+Oct 26 12:04:14
+Oct 26 12:04:14
+Oct 26 12:07:31
+Oct 26 12:07:31
+Oct 26 12:09:36
+Oct 26 12:09:36
+Oct 26 12:09:36
+Oct 26 12:13:48
+tester@tester-m:~$ sudo grep -i ERROR   /var/log/syslog | cut -f1,2,3 -d" "|cut -f2
+Oct 26 09:00:19
+Oct 26 09:29:47
+Oct 26 10:46:45
+Oct 26 10:46:45
+Oct 26 12:04:14
+Oct 26 12:04:14
+Oct 26 12:07:31
+Oct 26 12:07:31
+Oct 26 12:09:36
+Oct 26 12:09:36
+Oct 26 12:09:36
+Oct 26 12:13:48
+tester@tester-m:~$ sudo grep -i ERROR   /var/log/syslog | cut -f1,2,3 -d" "|cut -f1 -d":"|sort|uniq
+Oct 26 09
+Oct 26 10
+Oct 26 12
+
